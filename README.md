@@ -6,7 +6,7 @@ This is an exploratory project to see if I could create a deep learning model th
 
 The project uses Python and PyTorch to perform data preparation, model training, evaluation, and statistical analysis.
 
-This is an experimental machine learning project to try and utilize what I have learned with many areas to improve. This is **not a clinically validated medical tool**.
+This is an experimental machine learning project to try and utilize what I have learned with many areas to improve. This is **not a medical tool**.
 
 
 ## Objectives
