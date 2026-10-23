@@ -86,7 +86,7 @@ The ConvNeXt-Tiny model achieved a test MAE of approximately 5.82 years, compare
 
 Its reported 95% patient-level bootstrap confidence interval was 5.45 – 6.22 years.
 
-These results indicate that transfer learning substantially improved age prediction in this experiment. They do not establish clinical validity or guarantee similar performance on other datasets.
+These results indicate that transfer learning substantially improved age prediction in this experiment. They do not guarantee similar performance on other datasets.
 
 ### Error Analysis and View-Position Investigation
 
@@ -97,8 +97,6 @@ The analysis found that:
 - Predictions tended to overestimate ages for younger patients and underestimate ages for older patients.
 
 - AP and PA views had different test-set error distributions for some models.
-
-- Differences in MAE remained statistically distinguishable from zero for the pretrained models after the notebook's age/sex adjustment and multiple-comparison correction.
 
 These findings suggest that view position may be associated with prediction performance. They do not, by themselves, prove that view position causes the differences or that the models rely on it as a shortcut.
 
@@ -148,7 +146,7 @@ The project covers:
 
 The notebook documents the experiments and their evaluation.
 
-To reproduce the results, obtain the dataset from its original source, install the required Python dependencies, and run the notebook in order. Each network code block has no dependencies but you will need to run the first few code blocks where we read/clean/partition the data. Training may require a GPU and considerable computation time.
+To reproduce the results, obtain the dataset (should just be able to run the code to obtain the dataset), install the required Python dependencies, and run the notebook. Each network code block has no dependencies but you will need to run the first few code blocks where we read/clean/partition the data. Training may require a GPU and a decent amount of time.
 
 Exact reproduction may depend on the random seed and library version.
 
@@ -157,11 +155,11 @@ Exact reproduction may depend on the random seed and library version.
 
 The results apply to the dataset and evaluation setup used in this project.
 
-Performance on external datasets has not been established.
+Performance on external datasets was not tested.
 
-Predictions may be affected by dataset composition and demographic differences.
+Predictions should be taken with a grain of salt due to small dataset size and dataset composition.
 
-Associations between view position and model error do not establish causation.
+Associations between view position and model error do not establish causation, only some association.
 
 The models in this project are intended for research and learning only.
 
